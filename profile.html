@@ -7,35 +7,60 @@
     <link rel="stylesheet" href="./css/profile.css">
 </head>
 <body>
-    
-
+   
     <div class="form-container">
+        <h2>Registration Form</h2>
         <form>
-            <h2>Signup Form</h2>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required>
-            
-            <label for="blood-group">Blood Group:</label>
-            <input type="text" id="blood-group" name="blood-group" required>
-            
-            <label>Gender:</label>
-            <div class="gender-group">
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label>
-                <input type="radio" id="other" name="gender" value="other">
-                <label for="other">Other</label>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
             </div>
-            <button type="submit">Sign Up</button>
-        </form>
-    </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required>
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="gender-options">
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female" required> Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <select id="age" name="age" required>
+                    <option value="" disabled selected>Select your age</option>
+                    <option value="under_18">Under 18</option>
+                    <option value="18_24">18-24</option>
+                    <option value="25_34">25-34</option>
+                    <option value="35_44">35-44</option>
+                    <option value="45_54">45-54</option>
+                    <option value="55_64">55-64</option>
+                    <option value="65_plus">65+</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="blood-group">Blood Group:</label>
+                <select id="blood-group" name="blood-group" required>
+                    <option value="" disabled selected>Select your blood group</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="donated-date">Donation Date:</label>
+                <input type="date" id="donated-date" name="donated-date" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button> 
+
+   
 
 </body>
 </html>

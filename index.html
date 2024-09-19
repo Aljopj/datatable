@@ -8,23 +8,44 @@
 </head>
 <body>
     <div class="navbar">
-        <div class="navbar-left">
-            <h1>Data Table</h1>
-        </div>
-        <div class="navbar-right">
-            <a href="./profile.html"><button id="addUserBtn">Add User</button></a>
+        <h1>Blood Donation</h1>
+        <a href="./profile.html"><button class="add-button">Add</button></a>
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <h1>Users Table</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone No</th>
+                        <th>Gender</th>
+                        <th>Blood Group</th>
+                        <th>Age</th>
+                        <th>Donated Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example row; duplicate and modify as needed -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="actions">
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Delete</button>
+                        </td>
+                    </tr>
+    
+                </tbody>
+            </table>
         </div>
     </div>
-    <div>
-        <input type="text" class="ty" placeholder="name">
-        <input type="text" class="ty" placeholder="Email">
-        <input type="text" class="ty" placeholder="Phone">
-        <input type="text" class="ty" placeholder="Blood Group">
-        <input type="text" class="ty" placeholder="Gender">  
-        <button class="s">Save</button>
-        <button class="s">Delete</button>
-        <button class="s">Edit</button>  
-    </div>
-   
+           
+  
 </body>
 </html>
